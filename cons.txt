@@ -1,0 +1,11 @@
+
+
+2- Considere o protótipo da função membro a seguir e explique o objetivo de cada const na função
+    a. const double* calcularImposto(const Investimento* const inv) const;
+
+R:
+    1- O primeiro const indica que o retorno da função é um dado constante que não pode ser alterado.
+    2- O segundo const informa que o ponteiro to tipo Investimento não pode ter seu valor alterado, ou seja, não pode assumir outro endereço de memória.
+    3- O terceiro const informa que a variável "inv" não pode ter seus dados alterados. 
+    4- O quarto const funciona como uma trava para o compilador onde você afirma que a sua função não altera nenhum dado membro, sendo assim, 
+        qualquer atribuição que ocorra no corpo da função, ocasionará erro de compilação.
